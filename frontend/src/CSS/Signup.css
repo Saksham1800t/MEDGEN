@@ -1,0 +1,41 @@
+.signup-section {
+  margin: 0;
+  overflow: hidden;
+}
+
+.signup-container {
+  position: relative;
+}
+
+.image-container {
+  position: fixed;
+  top: 30%;
+  left: 70%;
+  transform: translateY(-35%);
+}
+
+.moving-image {
+  position: relative;
+  animation: moveImage 2s forwards;
+}
+
+
+@keyframes moveImage {
+  0% {
+    right: -100%;
+  }
+  100% {
+    right: 50%;
+  }
+}
+@media (max-width: 768px) {
+  .image-container {
+    width: 70vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .image-container {
+    width: 90vw; 
+  }
+}

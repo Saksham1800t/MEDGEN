@@ -1,0 +1,29 @@
+ .login-section {
+  margin: 0;
+  overflow: hidden;
+}
+
+.login-container {
+  position: relative;
+}
+
+.slide {
+  position:relative;
+  top:35%;
+  
+  transform: translateX(-35%);
+}
+ .move-slide {
+  position: relative;
+  animation: moveSlide 2s forwards;
+}
+
+@keyframes moveSlide {
+  0% {
+    left: -100%; 
+  }
+  100% {
+    left: 45%; 
+  }
+}
+
